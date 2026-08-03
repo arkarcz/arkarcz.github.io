@@ -2,63 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anna Karcz — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --cream: #F2EBDD;
+      --paper: #EAE1CE;
+      --ink: #1F2937;
+      --rust: #C1662F;
+      --stone: #8B8378;
+      --line: #D8CDB4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      color: #2c2c2c;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+      line-height: 1.65;
+      font-size: 16px;
     }
-    h1 { font-size: 2.2em; margin-bottom: 0; }
-    .subtitle { color: #666; margin-top: 4px; }
-    section { margin-top: 40px; }
-    h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 8px;
+
+    header {
+      margin-bottom: 56px;
     }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 2.6em;
+      margin: 0 0 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      color: var(--stone);
+      font-size: 1.05em;
+      margin: 0 0 4px;
+    }
+
+    .subtitle-line {
+      color: var(--stone);
+      font-size: 0.95em;
+      margin: 2px 0;
+    }
+
+    .tab {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--rust);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-bottom: none;
+      padding: 5px 14px 4px;
+      border-radius: 4px 4px 0 0;
+      position: relative;
+      top: 1px;
+    }
+
+    section {
+      margin-top: 44px;
+    }
+
+    .section-body {
+      border-top: 2px solid var(--ink);
+      padding-top: 22px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
     .project {
-      background: #f9f9f9;
-      padding: 16px;
-      border-radius: 8px;
-      margin-bottom: 16px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
     }
-    a { color: #0077cc; }
+
+    .project h3 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.15em;
+      margin: 0 0 8px;
+    }
+
+    .project p {
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .project p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .project a {
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+
+    .project .dates {
+      display: block;
+      color: var(--stone);
+      font-size: 0.85em;
+      font-weight: 400;
+      margin: -4px 0 10px;
+    }
+
+    a {
+      color: var(--rust);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+
+    a:hover, a:focus {
+      border-bottom-color: var(--rust);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--rust);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    .divider-dot {
+      color: var(--stone);
+      margin: 0 8px;
+    }
+
+    footer {
+      margin-top: 60px;
+      color: var(--stone);
+      font-size: 0.85em;
+    }
+
+    @media (max-width: 500px) {
+      body { padding: 48px 20px 80px; }
+      h1 { font-size: 2.1em; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Anna Karcz</h1>
-<p class="subtitle">Business Administration | Tepper School of Business</p>
-<p class="subtitle">Political Science, Security, and Technology | Institute for Strategy and Technology</p>
-<p class="subtitle">Carnegie Mellon University</p>
+  <header>
+    <h1>Anna Karcz</h1>
+    <p class="subtitle">Business Administration &amp; Political Science, Security, and Technology</p>
+    <p class="subtitle-line">Tepper School of Business · Institute for Strategy and Technology</p>
+    <p class="subtitle-line">Carnegie Mellon University</p>
+  </header>
+
   <section>
-    <h2>About</h2>
-    <p>I am a student in my sophomore year at Carnegie Mellon University pursuing a double bachelor of science in Business Administration and Political Science, Security, and Technology. </p>
-    <p>I am based in New Hampshire, and have grown up in the small town of Raymond. I graduated from Raymond High School as my class valedictorian. I am very committed to volunteer work, and trying to make a change in the world.</p> 
-    <p>I'm very curious about technology and the media, and take a particular interest in consumer-facing brands that intersect these ideas. </p>
-  </section></p>
-    <h2>Experience</h2>
-    <div class="experience">
-      <h3>O'Neil Cinemas: August 2023 - August 2026</h3>
-      <p>As a Cinema Employee at O'Neil Cinemas, I was tasked each shift with either working at the concessions stand, cleaning theaters, or scanning tickets. When working concessions, I was responsible for helping customers purchase tickets and food, handling card and cash transactions, and offering customer support when customers have a question or concern. When cleaning theaters, I was tasked with offering a farewell to patrons leaving the theater, and making sure that the theater is as clean as it previously was, in order to get it ready for the next showing. When scanning tickets, I was tasked with telling people where their theaters are, and making sure they know how to get there. This job has given me so many useful skills, including how to use a cash register, and has given me experience in the field of customer support.
-    </div>
-      </p>
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Reserva - Mock Marketing Campaign</h3>
-      <p>Reserva is a complete marketing campaign for a fictional dining reservation app. It is aimed at simplifying the process of booking dining reservations for a large profile of users.</p>
-   <a href="Reserva.pdf" target="_blank">View full campaign PDF →</a>
+    <span class="tab">About</span>
+    <div class="section-body">
+      <p>I'm a sophomore at Carnegie Mellon University pursuing a double bachelor of science in Business Administration and Political Science, Security, and Technology.</p>
+      <p>I'm based in New Hampshire and grew up in the small town of Raymond, where I graduated from Raymond High School as class valedictorian. I'm very committed to volunteer work and trying to make a change in the world.</p>
+      <p>I'm curious about technology and media, and take a particular interest in consumer-facing brands that sit at the intersection of the two.</p>
     </div>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p><a href="mailto:your@email.com">annarkarcz@icloud.com</a> · <a href="https://www.linkedin.com/in/anna-karcz-871175387">LinkedIn</a></p>
+    <span class="tab">Experience</span>
+    <div class="section-body">
+      <div class="project">
+        <h3>Cinema Employee, O'Neil Cinemas</h3>
+        <span class="dates">August 2023 – August 2026</span>
+        <p>Rotated across concessions, ticket scanning, and theater cleaning each shift. At concessions, handled ticket and food sales, card and cash transactions, and day-to-day customer support. When cleaning theaters, made sure each space was reset and ready for the next showing. When scanning tickets, helped guests find their theater and navigate the building.</p>
+        <p>Built hands-on experience with point-of-sale systems and customer support in a fast-paced, guest-facing environment.</p>
+      </div>
+    </div>
   </section>
+
+  <section>
+    <span class="tab">Projects</span>
+    <div class="section-body">
+      <div class="project">
+        <h3>Reserva — Mock Marketing Campaign</h3>
+        <p>A complete marketing campaign for a fictional dining reservation app, aimed at simplifying the reservation process for a broad user base.</p>
+        <a href="Reserva.pdf" target="_blank">View full campaign PDF →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="tab">Contact</span>
+    <div class="section-body">
+      <p>
+        <a href="mailto:annarkarcz@icloud.com">annarkarcz@icloud.com</a>
+        <span class="divider-dot">·</span>
+        <a href="https://www.linkedin.com/in/anna-karcz-871175387" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Last updated August 2026
+  </footer>
 
 </body>
 </html>
