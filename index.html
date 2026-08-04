@@ -184,6 +184,37 @@
     gap: 16px;
   }
 }
+    .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category-label {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
   </style>
 </head>
 <body>
@@ -244,17 +275,31 @@
 
   <section>
     <span class="tab">Skills</span>
-    <div class="section-body">
-      <div class="skill-group">
-        <p><span class="skill-label">Marketing:</span> Google Digital Marketing Certification — <a href="https://skillshop.exceedlms.com/student/award/7QYGjkbMTyPV9EXqzKykq5r7" target="_blank">View Certificate →</a></p>
-      </div>
-      <div class="skill-group">
-        <p><span class="skill-label">Operational:</span> Event Logistics, Customer Service, POS Systems</p>
-      </div>
-      <div class="skill-group">
-        <p><span class="skill-label">Technical:</span> Beginner HTML/CSS, Microsoft Excel, GitHub</p>
-      </div>
-    </div>
+   <div class="skill-category">
+  <p class="skill-category-label">Marketing</p>
+  <div class="skills-list">
+    <span class="skill-pill">Google Digital Marketing Certification</span>
+  </div>
+  <p style="margin-top: 8px;"><a href="https://skillshop.exceedlms.com/student/award/7QYGjkbMTyPV9EXqzKykq5r7" target="_blank">View Certificate →</a></p>
+</div>
+
+<div class="skill-category">
+  <p class="skill-category-label">Operational</p>
+  <div class="skills-list">
+    <span class="skill-pill">Event Logistics</span>
+    <span class="skill-pill">Customer Service</span>
+    <span class="skill-pill">POS Systems</span>
+  </div>
+</div>
+
+<div class="skill-category">
+  <p class="skill-category-label">Technical</p>
+  <div class="skills-list">
+    <span class="skill-pill">HTML/CSS</span>
+    <span class="skill-pill">Microsoft Excel</span>
+    <span class="skill-pill">GitHub</span>
+  </div>
+</div>
   </section>
 
   <section>
