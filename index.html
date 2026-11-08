@@ -118,19 +118,6 @@
       margin: -4px 0 10px;
     }
 
-    .skill-group {
-      margin-bottom: 12px;
-    }
-
-    .skill-group:last-child {
-      margin-bottom: 0;
-    }
-
-    .skill-label {
-      font-weight: 600;
-      color: var(--ink);
-    }
-
     a {
       color: var(--rust);
       text-decoration: none;
@@ -159,63 +146,62 @@
       font-size: 0.85em;
     }
 
+    .header-flex {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--paper);
+      flex-shrink: 0;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-pill {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-size: 0.85em;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .skill-category {
+      margin-bottom: 20px;
+    }
+
+    .skill-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-category-label {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1em;
+      margin: 0 0 10px;
+      color: var(--ink);
+    }
+
     @media (max-width: 500px) {
       body { padding: 48px 20px 80px; }
       h1 { font-size: 2.1em; }
+      .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
     }
-    .header-flex {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.headshot {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--paper);
-  flex-shrink: 0;
-}
-
-@media (max-width: 500px) {
-  .header-flex {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-}
-    .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-pill {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  color: var(--ink);
-  font-size: 0.85em;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-
-.skill-category {
-  margin-bottom: 20px;
-}
-
-.skill-category:last-child {
-  margin-bottom: 0;
-}
-
-.skill-category-label {
-  font-family: 'Fraunces', serif;
-  font-weight: 500;
-  font-size: 1em;
-  margin: 0 0 10px;
-  color: var(--ink);
-}
   </style>
 </head>
 <body>
@@ -232,114 +218,114 @@
   </div>
 </header>
 
-  <section>
-    <span class="tab">About</span>
-    <div class="section-body">
-      <p>I'm a sophomore at Carnegie Mellon University pursuing a double bachelor of science in Business Administration and Political Science, Security, and Technology.</p>
-      <p>I'm based in New Hampshire and grew up in the small town of Raymond, where I graduated from Raymond High School as class valedictorian. I'm very committed to volunteer work and trying to make a change in the world.</p>
-      <p>I'm very interested in law, government relations, and public policy, and looking into jobs pertaining to those fields.</p>
-    </div>
-  </section>
-
-  <section>
-    <span class="tab">Experience</span>
-    <div class="section-body">
-      <div class="project">
-        <h3>Campus Ambassador and Regional Lead, PollSee</h3>
-        <span class="dates">August 2026 – Present</span>
-        <p>Informed local students about platform and orchestrated app sign-ups, Met with national college students to optimize platform success.</p>
-      </div>
-      <div class="project">
-        <h3>Employer Relations Ambassador, Carnegie Mellon University Career and Professional Development Center</h3>
-        <span class="dates">August 2026 – Present</span>
-        <p>Coordinate on-campus employer events on a weekly basis. Oversaw Handshake-specific data helpful for center and university. Managed and delegated spaces and times for student interviews. Helped with front-of-house operations in the university interview center.  </p>
-    </div>
-      <div class="project">
-        <h3>Vice President &amp; Logistics Chair, Carnegie Mellon University Democrats</h3>
-        <span class="dates">October 2025 – Present</span>
-        <p>Active member in CMU College Democrats, helping to plan and execute meetings and other events with up to 50+ attendees. Won 2 consecutive elections.</p>
-      </div>
-      <div class="project">
-        <h3>Cinema Employee, O'Neil Cinemas</h3>
-        <span class="dates">August 2023 – August 2026</span>
-        <p>Rotated across concessions, ticket scanning, and theater cleaning each shift. At concessions, handled ticket and food sales, card and cash transactions, and day-to-day customer support. When cleaning theaters, made sure each space was reset and ready for the next showing. When scanning tickets, helped guests find their theater and navigate the building.</p>
-        <p>Built hands-on experience with point-of-sale systems and customer support in a fast-paced, guest-facing environment.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <span class="tab">Volunteer Work</span>
-    <div class="section-body">
-      <div class="project">
-        <h3>Local Foster Home Volunteer</h3>
-        <span class="dates">March 2022 – Present</span>
-        <p>Volunteer to watch and spend time with kids at a local family foster home in my town.</p>
-      </div>
-      <div class="project">
-        <h3>Youth Action Member, Raymond Coalition for Youth</h3>
-        <span class="dates">September 2022 – June 2025</span>
-        <p>Spent many hours each month helping to organize and execute events for Raymond Coalition for Youth (RCFY), with the initiative of creating a healthier and safer environment. Focused particularly on improving the mental health of students and adults in the community. Awarded the RCFY Scholarship in 2025.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <span class="tab">Skills</span>
-    <div class="section-body">
-   <div class="skill-category">
-  <p class="skill-category-label">Marketing</p>
-  <div class="skills-list">
-    <span class="skill-pill">Google Digital Marketing Certification</span>
+<section>
+  <span class="tab">About</span>
+  <div class="section-body">
+    <p>I'm a sophomore at Carnegie Mellon University pursuing a double bachelor of science in Business Administration and Political Science, Security, and Technology.</p>
+    <p>I'm based in New Hampshire and grew up in the small town of Raymond, where I graduated from Raymond High School as class valedictorian. I'm very committed to volunteer work and trying to make a change in the world.</p>
+    <p>I'm very interested in law, government relations, and public policy, and looking into jobs pertaining to those fields.</p>
   </div>
-  <p style="margin-top: 8px;"><a href="https://skillshop.exceedlms.com/student/award/7QYGjkbMTyPV9EXqzKykq5r7" target="_blank">View Certificate →</a></p>
-</div>
+</section>
+
+<section>
+  <span class="tab">Experience</span>
+  <div class="section-body">
+    <div class="project">
+      <h3>Campus Ambassador and Regional Lead, PollSee</h3>
+      <span class="dates">August 2026 – Present</span>
+      <p>Informed local students about platform and orchestrated app sign-ups, Met with national college students to optimize platform success.</p>
+    </div>
+    <div class="project">
+      <h3>Employer Relations Ambassador, Carnegie Mellon University Career and Professional Development Center</h3>
+      <span class="dates">August 2026 – Present</span>
+      <p>Coordinate on-campus employer events on a weekly basis. Oversaw Handshake-specific data helpful for center and university. Managed and delegated spaces and times for student interviews. Helped with front-of-house operations in the university interview center.</p>
+    </div>
+    <div class="project">
+      <h3>Vice President &amp; Logistics Chair, Carnegie Mellon University Democrats</h3>
+      <span class="dates">October 2025 – Present</span>
+      <p>Active member in CMU College Democrats, helping to plan and execute meetings and other events with up to 50+ attendees. Won 2 consecutive elections.</p>
+    </div>
+    <div class="project">
+      <h3>Cinema Employee, O'Neil Cinemas</h3>
+      <span class="dates">August 2023 – August 2026</span>
+      <p>Rotated across concessions, ticket scanning, and theater cleaning each shift. At concessions, handled ticket and food sales, card and cash transactions, and day-to-day customer support. When cleaning theaters, made sure each space was reset and ready for the next showing. When scanning tickets, helped guests find their theater and navigate the building.</p>
+      <p>Built hands-on experience with point-of-sale systems and customer support in a fast-paced, guest-facing environment.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="tab">Volunteer Work</span>
+  <div class="section-body">
+    <div class="project">
+      <h3>Local Foster Home Volunteer</h3>
+      <span class="dates">March 2022 – Present</span>
+      <p>Volunteer to watch and spend time with kids at a local family foster home in my town.</p>
+    </div>
+    <div class="project">
+      <h3>Youth Action Member, Raymond Coalition for Youth</h3>
+      <span class="dates">September 2022 – June 2025</span>
+      <p>Spent many hours each month helping to organize and execute events for Raymond Coalition for Youth (RCFY), with the initiative of creating a healthier and safer environment. Focused particularly on improving the mental health of students and adults in the community. Awarded the RCFY Scholarship in 2025.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="tab">Skills</span>
+  <div class="section-body">
+    <div class="skill-category">
+      <p class="skill-category-label">Marketing &amp; Policy</p>
+      <div class="skills-list">
+        <span class="skill-pill">Google Digital Marketing Certification</span>
+      </div>
+      <p style="margin-top: 8px;"><a href="https://skillshop.exceedlms.com/student/award/7QYGjkbMTyPV9EXqzKykq5r7" target="_blank">View Certificate →</a></p>
     </div>
 
-<div class="skill-category">
-  <p class="skill-category-label">Operational</p>
-  <div class="skills-list">
-    <span class="skill-pill">Event Logistics</span>
-    <span class="skill-pill">Customer Service</span>
-    <span class="skill-pill">POS Systems</span>
-  </div>
-</div>
-
-<div class="skill-category">
-  <p class="skill-category-label">Technical</p>
-  <div class="skills-list">
-    <span class="skill-pill">HTML/CSS</span>
-    <span class="skill-pill">Microsoft Excel</span>
-    <span class="skill-pill">GitHub</span>
-  </div>
-</div>
-  </section>
-
-  <section>
-    <span class="tab">Projects</span>
-    <div class="section-body">
-      <div class="project">
-        <h3>Reserva — Mock Marketing Campaign</h3>
-        <p>A complete marketing campaign for a fictional dining reservation app, aimed at simplifying the reservation process for a broad user base.</p>
-        <a href="Reserva.pdf" target="_blank">View full campaign PDF →</a>
+    <div class="skill-category">
+      <p class="skill-category-label">Operational</p>
+      <div class="skills-list">
+        <span class="skill-pill">Event Logistics</span>
+        <span class="skill-pill">Customer Service</span>
+        <span class="skill-pill">POS Systems</span>
       </div>
     </div>
-  </section>
 
-  <section>
-    <span class="tab">Contact</span>
-    <div class="section-body">
-      <p>
-        <a href="mailto:annarkarcz@icloud.com">annarkarcz@icloud.com</a>
-        <span class="divider-dot">·</span>
-        <a href="https://www.linkedin.com/in/anna-karcz-871175387" target="_blank">LinkedIn</a>
-      </p>
+    <div class="skill-category">
+      <p class="skill-category-label">Technical &amp; Analytical</p>
+      <div class="skills-list">
+        <span class="skill-pill">HTML/CSS</span>
+        <span class="skill-pill">Microsoft Excel</span>
+        <span class="skill-pill">GitHub</span>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    Last updated August 2026
-  </footer>
+<section>
+  <span class="tab">Projects &amp; Writing</span>
+  <div class="section-body">
+    <div class="project">
+      <h3>Reserva — Mock Marketing Campaign</h3>
+      <p>A complete marketing campaign for a fictional dining reservation app, aimed at simplifying the reservation process for a broad user base.</p>
+      <a href="Reserva.pdf" target="_blank">View full campaign PDF →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="tab">Contact</span>
+  <div class="section-body">
+    <p>
+      <a href="mailto:annarkarcz@icloud.com">annarkarcz@icloud.com</a>
+      <span class="divider-dot">·</span>
+      <a href="https://www.linkedin.com/in/anna-karcz-871175387" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  Last updated November 2026
+</footer>
 
 </body>
 </html>
